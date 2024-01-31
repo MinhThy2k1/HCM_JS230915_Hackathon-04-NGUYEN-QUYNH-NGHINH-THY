@@ -1,0 +1,158 @@
+#toggle {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    ;
+    width: 40px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #F48493;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#toggle:checked+label {
+    background-color: #d7b1b6;
+}
+
+#toggle:checked+label::before {
+    transform: translateX(20px);
+}
+
+.box-tog {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.main-box {
+    border-radius: 10px;
+    transform: translate(170%, 10%);
+    padding-right: 35px;
+    width: 20%;
+    height: 30%;
+    background-color: #EF5366;
+    text-align: center;
+
+    ul {
+        li {
+            list-style: none;
+        }
+
+
+
+
+    }
+
+}
+
+.main-tog {
+    padding-left: 30px;
+    color: white;
+    text-align: center;
+}
+
+.content-box {
+
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color: white;
+        margin-left: 30px;
+        width: 300px;
+    }
+
+    .line {
+        margin-left: 40px;
+        border-bottom: 1px solid white;
+    }
+}
+
+.todo-box {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F16674;
+    border-radius: 10px;
+
+    span {
+        font-weight: 700;
+        font-size: 15px;
+
+        margin-right: 100px;
+    }
+
+    input {
+        width: 20px;
+        height: 15px;
+    }
+
+
+
+    button {
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.add-box {
+    padding-left: 35px;
+
+    h5 {
+        font-size: 15px;
+        padding-left: 15px;
+        display: flex;
+        color: white;
+    }
+
+    input {
+        padding: 10px 10px;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: #F16674;
+        color: white;
+        padding: 10px 10px;
+    }
+
+}
+
+.add-box2 {
+    padding-top: 20px;
+}
+
+input[type="checkbox" i] {
+    background-color: #EF5366 !important;
+    cursor: pointer;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+}
